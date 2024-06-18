@@ -144,6 +144,10 @@ text-align: center;
   &:focus,
   &:active {
     outline-style: none;
+    // border: 1px solid var(--BaseBlue-500);
+    box-shadow: 0 0 10px var(--BaseBlue-100);
+
+
   }
 
   @media screen and (min-width: 1280px) {
