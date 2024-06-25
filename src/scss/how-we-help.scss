@@ -69,6 +69,13 @@ width: 176px;
     }
 }
 
+.how-we-help__text {
+    
+    @media screen and (min-width: 842px) {
+      font-size: 18px  
+    }
+}
+
 // .box-3 {
 //     grid-row-start: 2;
 // }

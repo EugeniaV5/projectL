@@ -1,0 +1,85 @@
+
+.countries__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 524px) {
+        flex-direction: row-reverse;
+    }
+}
+
+.countries__img-side {
+    margin-bottom: 22px;
+    @media screen and (min-width: 524px) {
+        // width: 50%;
+        // margin-bottom: 0;
+        margin: 0 auto;
+    }
+}
+
+.countries__img {
+    @media screen and (min-width: 842px)  {
+ width: 426px;
+    height: 361px;
+    }
+   
+}
+
+.countries-side {
+    // display: grid;
+    @media screen and (min-width: 524px) {
+        width: 50%;
+        margin-right: 20px;
+    }
+}
+.countries__text {
+margin-bottom: 20px;
+
+    font-weight: 700;
+    @media screen and (min-width: 842px) {
+        margin-bottom: 26px;
+        font-size: 20px;
+    }
+}
+
+.countries__list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.countries__list-left {
+    display: grid;
+    gap: 16px;
+    margin-right: 10px;
+
+    @media screen and (min-width: 842px) {
+        gap: 20px;
+    }
+}
+
+.countries__item {
+    display: flex;
+}
+
+.countries__svg {
+    margin-right: 8px;
+     @media screen and (min-width: 842px) {
+         margin-right: 12px;
+     }
+}
+
+.countries__list-right {
+    display: grid;
+    gap: 16px;
+}
+
+.spain-svg {
+border-radius: 50%;
+}
+
+.country-name {
+      @media screen and (min-width: 842px) {
+        font-size: 22px;
+    } 
+}
