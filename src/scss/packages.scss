@@ -1,5 +1,41 @@
+.packages__list {
+    
+
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 524px) {
+            // grid-template-columns: repeat(2, 1fr);
+            display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: -32px;
+    margin-left: -32px;
+
+    }
+
+    @media screen and (min-width: 842px) {
+                    // grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
 .packages__item {
-    padding: 32px;
+display: flex;
+flex-direction: column;
+// justify-content: space-between;
+align-items: center;
+
+
+padding: 32px;
+
+&:not(:last-child) {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 842px) {
+        margin-bottom: 0;
+    }
+}
 
 border: 1px solid #ebebeb;
 border-radius: 12px;
@@ -11,26 +47,101 @@ transition: .25s;
 border-color: #25ae60;
 box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;
 }
+
+@media screen and (min-width: 524px) {
+
+margin-top: 32px;
+margin-left: 32px;
+
+flex-basis: calc((100% - 64px) / 2);
+
+
+}
+
+@media screen and (min-width: 842px) {
+    flex-basis: calc((100% - 96px) / 3);
+}
+
 }
 
 .packages__item-title {
     margin-bottom: 20px;
 
+    font-size: 18px;
     font-weight: 700;
+
+    @media screen and (min-width: 524px) {
+            align-self: start;
+            height: 50px;
+        }
+
+    // @media screen and (min-width: 842px)  {
+
+    //     }
+
+        @media screen and (min-width: 893px) {
+            height: 30px;
+        }
 }
 
 .packages__item-subtitle {
         margin-bottom: 20px;
+        @media screen and (min-width: 524px) {
+            align-self: start;
+        }
 
 }
+
+.packages__item-list {
+height: 209px;
+padding-left: 20px;
+margin-bottom: 20px;
+
+list-style-type: disc;
+
+@media screen and (min-width: 524px) {
+            align-self: start;
+        }
+}
+
  .packages__item-item {
-  list-style: inside;
+font-size: 14px;
+}
 
- &::marker {
-//      content: "";
-//   color: red;
-//   font-size: 1.5px;
-  color: hotpink;
+.packages__price {
+margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.packages__button {
+    // width: 0%;
+    max-width: 200px;
+    background-color: #25ae60;
+}
+
+.packages__button-active {
+        max-width: 200px;
+
+    background-color: #f49a40;
+}
+
+.packages__item-active {
+    background-color: #25ae60;
+    color: #fff;
 
 }
+
+.packages__contact-text-wrapper {
+
+}
+
+.packages__contact-text {
+    display: inline;
+}
+
+.packages__contact-link {
+    color: #25ae60;
 }
