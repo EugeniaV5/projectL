@@ -55,14 +55,14 @@ button::-moz-focus-inner {
 
 .container {
   min-width: 320px;
-
+max-width: 1180px;
   padding-right: 32px;
   padding-left: 32px;
   margin: 0 auto;
 
   @media screen and (min-width: 1280px) {
-    min-width: 1280px;
-    max-width: 1540px;
+    // min-width: 1280px;
+    // max-width: 1540px;
 
     padding-right: 52px;
     padding-left: 52px;
