@@ -195,7 +195,13 @@ text-align: center;
   padding: 8px;
 
     border-radius: 5px;
+background-color: #25ae60;
     // box-shadow: 0 5px 15px -2px var(--BaseBlue-source);
+
+    &:hover,
+    &:focus {
+      background-color: #1e8c4d;
+    }
 
 
   @media screen and (min-width: 624px) {

@@ -1,0 +1,71 @@
+<!-- Contact us -->
+<section class="section contact-form__section" id="contacts">
+  <div class="container contact-form__container opacity">
+    <h2 class="visually-hidden">Contact form</h2>
+    <div class="contact-form__text-wrapper">
+      <p class="contact-form__main-text">
+        Want to know more about our services?
+      </p>
+      <p class="contact-form__text">
+        For a consultation, please contact us in a way that is convenient for
+        you. Our team will be happy to assist you with your needs.
+      </p>
+    </div>
+    <div class="contact-form__right-side">
+      <form
+        action="#"
+        class="contact-us__form"
+        action=""
+        data-form-validate="true"
+      >
+        <div class="form__fields-wrapper">
+          <span class="contact-us-form__input-wrapper">
+            <input
+              class="contact-us-form__input tel"
+              type="tel"
+              required
+              title="+38(999) 999-99-99"
+              placeholder="Phone number"
+              value=""
+              name="phone-client"
+            />
+            <svg class="input__svg" width="14px" height="14px">
+              <use xlink:href="../img/sprite.svg#icon-phone"></use>
+            </svg>
+          </span>
+
+          <span class="contact-us-form__input-wrapper">
+            <input
+              class="contact-us-form__input mail"
+              type="email"
+              required
+              title="example@gmail.com"
+              name="email-client"
+              placeholder="Email"
+            />
+            <svg class="input__svg" width="14px" height="14px">
+              <use xlink:href="../img/sprite.svg#mail"></use>
+            </svg>
+          </span>
+        </div>
+        <input type="hidden" name="url" />
+        <input
+          type="hidden"
+          id="g-recaptcha-response"
+          name="g-recaptcha-response"
+        />
+        <button type="submit" class="button contact-us-form__button">
+          <span class="contact-us-form__button-text">Get a consultation</span>
+        </button>
+      </form>
+      <p class="contact-form__text cta__cred">
+        By clicking Get a consultation you're confirming that you agree with our
+      </p>
+      <a
+        class="contact-form__text contact-us-form__link cta__cred"
+        href="./policy-page.html"
+        >Terms and Conditions</a
+      >
+    </div>
+  </div>
+</section>

@@ -18,7 +18,9 @@
 
   text-align: center;
 
-  background-color: var(--OceanBlue-50, #eff4fc);
+  // background-color: var(--OceanBlue-50, #eff4fc);
+  // background-color: #B3E6C0;
+  background-color: #fff;
 }
 
 .mobile-menu.is-open {
@@ -64,17 +66,20 @@
   padding: 8px;
   margin: 0 auto;
 
-  color: var(--BaseBlue-50);
+  // color: var(--BaseBlue-50);
+    border-radius: 5px;
+
   text-decoration: underline;
 
-  background-color: var(--BaseBlue-source);
+  // background-color: var(--BaseBlue-source);
+    background-color: #25ae60;
 
   &:hover,
   &:focus {
-    background-color: var(--BaseBlue-500);
+  background-color: #1e8c4d;
   }
 
   &:active {
-    background-color: var(--BaseBlue-700);
+  background-color: #1e8c4d;
   }
 }
